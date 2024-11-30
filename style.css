@@ -1,0 +1,126 @@
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Top Menu */
+#topMenu {
+    background-color: #e5e5e5;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /*Makes it sticky on scroll*/
+    top: 0;
+    z-index: 1000;
+}
+
+#topMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#topMenu li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+
+/* Header */
+header {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Exercises Section */
+#exercise-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.exercise {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.exercise h3 {
+    margin-top: 0;
+}
+
+.exercise input[type="number"],
+.exercise input[type="text"] {
+    width: calc(100% - 12px); /* Adjust for padding */
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.exercise button {
+    background-color: #4CAF50; /*Green check button*/
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.exercise #result1, .exercise #result2, .exercise #result3, .exercise #result4, .exercise #result5, .exercise #result6 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
